@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .choice-prefix {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .btn-group-vertical > .btn {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div id="quiz-container" class="card">
+        <div class="card-header">Question <span id="question-number"></span></div>
+        <div class="card-body">
+          <h5 id="question" class="card-title"></h5>
+          <p id="timer" class="card-text"></p>
+          <div id="choices" class="btn-group-vertical mb-3" role="group">
+          </div>
+          <div class="d-flex justify-content-between">
+            <button id="prev-btn" class="btn btn-secondary">Previous</button>
+            <button id="next-btn" class="btn btn-primary">Next</button>
+          </div>
+        </div>
+      </div>
+      <div id="results" class="mt-5 hidden"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
